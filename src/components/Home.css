@@ -158,6 +158,19 @@ input[type="text"]::placeholder {
   cursor: pointer;
   color: white;
   font-size: 16px;
+  transition: all 0.3s ease 0s, box-shadow 0.2s ease, transform-origin 0.2s ease;
+}
+
+.bottone:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid #854cff;
+  background-color: white;
+  color: #854cff;
+}
+
+.bottone:active {
+  transform: scale(0.95);
 }
 
 input::-webkit-outer-spin-button,
