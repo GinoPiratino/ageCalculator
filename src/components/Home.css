@@ -42,7 +42,7 @@
   padding: 15px;
 }
 
-.input-changed{
+.input-changed {
   border: 1px solid red;
   background-color: white;
   width: 100px;
@@ -174,4 +174,59 @@ input::-webkit-inner-spin-button {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 300px;
+    height: auto;
+    padding: 20px; /* Aumentiamo lo spazio interno */
+  }
+
+  .second-container {
+    flex-direction: column; /* Posizioniamo gli input in una colonna singola */
+    align-items: center; /* Centriamo gli elementi verticalmente */
+  }
+
+  .years {
+    font-size: 40px; /* Riduciamo la dimensione del font per farlo entrare nel container */
+  }
+
+  .months{
+    font-size: 40px;
+  }
+
+  .days{
+    font-size: 40px; 
+    border-radius: 100px;
+  }
+
+  .data {
+    margin-right: 0; /* Rimuoviamo il margine tra gli input */
+    margin-bottom: 20px; /* Aggiungiamo uno spazio tra gli input */
+  }
+
+  .bottone {
+    width: 100%; /* Il bottone occupa tutta la larghezza disponibile */
+    height: 40px; /* Aggiungiamo uno spazio sopra al bottone */
+  }
+
+  .counter-container{
+    width: 250px;
+    border-radius: 100px;
+  }
+
+  .third-container {
+    width: 250px;
+  }
+  .input{
+    width: 75px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .input-changed{
+    width: 75px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
